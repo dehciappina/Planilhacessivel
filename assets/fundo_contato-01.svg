@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+	<!ENTITY st0 "opacity:0.35;fill:#F9ED32;">
+	<!ENTITY st1 "opacity:0.3;fill:#F9ED32;">
+	<!ENTITY st2 "opacity:0.15;fill:#F9ED32;">
+	<!ENTITY st3 "opacity:0.2;fill:#F9ED32;">
+	<!ENTITY st4 "opacity:0.45;fill:#F9ED32;">
+	<!ENTITY st5 "opacity:0.4;fill:#F9ED32;">
+	<!ENTITY st6 "opacity:0.1;fill:#F9ED32;">
+	<!ENTITY st7 "opacity:0.18;fill:#F9ED32;">
+	<!ENTITY st8 "opacity:0.25;fill:#F9ED32;">
+	<!ENTITY st9 "opacity:5.000000e-002;fill:#F9ED32;">
+]>
+<svg enable-background="new 0 0 700 1000" version="1.1" viewBox="0 0 700 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<switch>
+	<foreignObject width="1" height="1" requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/">
+	</foreignObject>
+	<g fill="#F9ED32">
+		<polygon points="604.5 218.7 567.1 158.1 604.5 97.5 642 158.1" opacity=".35"/>
+		<polygon points="702.6 377.3 604.5 218.7 702.6 60 800.7 218.7" opacity=".3"/>
+		<polygon points="529.6 792.2 431.5 633.5 529.6 474.8 627.7 633.5" opacity=".15"/>
+		<polygon points="604.5 434.8 543.9 336.7 604.5 238.7 665.1 336.7" opacity=".3"/>
+		<polygon points="627.7 613.5 567.1 515.4 627.7 417.4 688.3 515.4" opacity=".2"/>
+		<polygon points="641.4 132.1 580.8 34 641.4 -64.1 702 34" opacity=".45"/>
+		<polygon points="496.5 482.3 435.8 384.2 496.5 286.1 557.1 384.2" opacity=".3"/>
+		<polygon points="533.9 326.7 473.3 228.7 533.9 130.6 594.5 228.7" opacity=".4"/>
+		<polygon points="665.1 458 627.7 397.4 665.1 336.7 702.6 397.4" opacity=".2"/>
+		<polygon points="627.7 538.6 590.2 478 627.7 417.4 665.1 478" opacity=".1"/>
+		<polygon points="665.1 552.9 642 515.4 665.1 478 688.3 515.4" opacity=".15"/>
+		<polygon points="459 562.9 421.5 502.3 459 441.7 496.5 502.3" opacity=".3"/>
+		<polygon points="450.2 805.1 412.7 744.5 450.2 683.9 487.6 744.5" opacity=".18"/>
+		<polygon points="412.7 721.3 389.5 683.9 412.7 646.4 435.8 683.9" opacity=".1"/>
+		<polygon points="400.4 666.4 377.2 628.9 400.4 591.5 423.5 628.9" opacity=".25"/>
+		<polygon points="533.9 421.7 510.8 384.2 533.9 346.7 557.1 384.2" opacity=".1"/>
+		<polygon points="423.5 375.2 400.4 337.7 423.5 300.3 446.7 337.7" opacity=".1"/>
+		<polygon points="417.2 590.3 394.1 552.9 417.2 515.4 440.4 552.9" opacity=".1"/>
+		<polygon points="533.9 205.5 510.8 168.1 533.9 130.6 557.1 168.1" opacity=".1"/>
+		<polygon points="618.8 195.5 595.7 158.1 618.8 120.6 642 158.1" opacity=".1"/>
+			<polygon points="384.4 944.9 346.9 884.3 384.4 823.7 421.9 884.3" opacity=".05"/>
+			<polygon points="347.8 856.5 287.2 758.5 347.8 660.4 408.4 758.5" opacity=".15"/>
+			<polygon points="408.4 833.4 385.2 795.9 408.4 758.5 431.5 795.9" opacity=".1"/>
+			<polygon points="339.9 972.4 316.8 934.9 339.9 897.5 363.1 934.9" opacity=".05"/>
+			<polygon points="347.8 735.3 324.6 697.9 347.8 660.4 370.9 697.9" opacity=".1"/>
+			<polygon points="384.4 944.9 361.2 907.5 384.4 870 407.5 907.5" opacity=".1"/>
+			<polygon points="316.8 906.3 293.6 868.8 316.8 831.4 339.9 868.8" opacity=".1"/>
+		<polygon points="698.3 512.3 675.1 474.8 698.3 437.4 721.4 474.8" opacity=".1"/>
+		<polygon points="567.1 515.4 529.6 454.8 567.1 394.2 604.5 454.8" opacity=".25"/>
+		<polygon points="529.6 792.2 469 694.1 529.6 596 590.2 694.1" opacity=".05"/>
+		<polygon points="384.4 532.9 323.8 434.8 384.4 336.7 445 434.8" opacity=".05"/>
+		<polygon points="469 694.1 431.5 633.5 469 572.9 506.5 633.5" opacity=".1"/>
+		<polygon points="347.8 650.9 310.3 590.3 347.8 529.7 385.2 590.3" opacity=".1"/>
+		<polygon points="559.1 148.1 521.6 87.5 559.1 26.8 596.5 87.5" opacity=".2"/>
+	</g>
+</switch>
+</svg>
