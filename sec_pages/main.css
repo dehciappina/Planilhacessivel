@@ -466,9 +466,7 @@ body > section {
 
 .blocks_container > div {
     width: 60vh;
-    max-width: 500px;
     height: 30vh;
-    max-height: 300px;
     box-shadow: 0 10px 40px #AEC1DD;
     margin-bottom: 3%;
     display: flex;
