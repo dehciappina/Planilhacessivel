@@ -270,7 +270,6 @@ body > section {
     height: 130%;
     bottom: -35%;
     position: fixed !important;
-    filter: blur(5px);
 }
 
 .iframe_container {
@@ -511,7 +510,9 @@ body > section {
     animation: float_icon 1.5s 1s ease-in-out infinite alternate;
 }
 
-
+#details2 {
+    display:none;
+}
 
 
 
@@ -636,7 +637,7 @@ body > section {
         height: 28vh;
     }
 
-    .price_tag {
+    .free_download {
         width: 50%;
         position: relative;
         right: 0;
@@ -659,12 +660,12 @@ body > section {
         animation: none;
     }
     
-    .normal_vers img {
+    #details2 {
         display:block;
-        height: 70%;
+        height: auto;
     }
 
-    .normal_vers p {
+    #details {
         display:none;
     }
 

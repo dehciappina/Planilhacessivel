@@ -5,12 +5,14 @@ const freeDownload = document.querySelector('.free_download')
 const freeDownloadText = document.querySelector('.free_download h2')
 const preTitle = document.querySelector('#pre_title') 
 const detailsButton = document.querySelector('#details') 
+const detailsButton2 = document.querySelector('#details2')
 const backToMainPage = document.querySelector('#back_main_page') 
 
 // COMPONENTIZAÇÃO DE TEXTOS
 freeDownloadText.innerHTML = "Download Gratuito";
 preTitle.innerHTML = "VOCÊ ESTÁ PRESTES A BAIXAR A PLANILHA DE";
 detailsButton.innerHTML = "Detalhes do Programa";
+detailsButton2.innerHTML = "Detalhes";
 backToMainPage.innerHTML = "Página inicial";
 
 function goToInfo() {
