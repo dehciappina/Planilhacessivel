@@ -394,6 +394,8 @@ body > section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 4vh;
+    box-sizing: border-box;
 }
 
 .free_download:hover:before {
