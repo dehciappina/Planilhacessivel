@@ -765,6 +765,7 @@ input:focus, textarea:focus {
     .planilhas article {
         height: 28vh;
         margin-bottom: 2vh;
+        background: white;
     }
 
 
