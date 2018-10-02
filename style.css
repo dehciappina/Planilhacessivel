@@ -25,7 +25,7 @@ button:focus {
 }
 
 main {
-    background-color: #EEE;
+    background-color: #DEE;
     position: fixed;
     top: 0;
     right: 0;
@@ -324,7 +324,7 @@ main {
 
     cursor: alias;
     transition:var(--planilhas-transition-mouseout);
-    background: #DDD;
+    background: #BDD;
 }
 
 
