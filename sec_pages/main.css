@@ -161,7 +161,7 @@ body > header, body > footer {
 }
 
 .complete_vers > section form:hover {
-    transform:scale(0.9);
+    transform:scale(1.02);
 }
 
 .complete_vers > section h4 {
@@ -175,15 +175,15 @@ body > header, body > footer {
     height: 180%;
 }
 
-    .complete_vers:hover {
-        height: 100vh;
-        box-shadow: -10px 0 100px 20px rgba(42, 61, 89, 0.8);
+    .complete_vers:hover, .triggered_complete_vers {
+        height: 100vh !important;
+        box-shadow: -10px 0 100px 20px rgba(42, 61, 89, 0.8) !important;
     }
 
-    .complete_vers:hover section {
-        visibility: visible;
-        opacity: 1;
-        transition:0.8s 0.4s ease;
+    .complete_vers:hover section, .triggered_complete_vers_section {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition:0.8s 0.4s ease !important;
     }
 
 .complete_vers::after {
@@ -195,9 +195,9 @@ body > header, body > footer {
     transform: rotate(10deg) translateY(-100%);
     transition: 1s 0.3s ease;
 }
-    .complete_vers:hover:after {
-        transform: rotate(15deg) translateY(100%);
-        transition: 1.3s ease;
+    .complete_vers:hover:after, .triggered_complete_vers_after {
+        transform: rotate(15deg) translateY(100%) !important;
+        transition: 1.3s ease !important;
     }
 
 .complete_vers > section ul {
@@ -468,7 +468,7 @@ body > section {
 .blocks_container > div {
     width: 60vh;
     height: 30vh;
-    box-shadow: 0 10px 40px #AEC1DD;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
     margin-bottom: 3%;
     display: flex;
     justify-content: space-evenly;
@@ -483,6 +483,10 @@ body > section {
     font-weight: 100;
     flex-direction: column;
     transition:0.3s ease;
+}
+
+.blocks_container > div:hover {
+    background:white;
 }
 
 .blocks_container > div p {

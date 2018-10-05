@@ -1,29 +1,24 @@
 body {
     margin:0;
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-
 :root {
     --articles-transition-delay:0.8s;
     --articles-transition:0.5s;
     --planilhas-transition-mouseon: 0.4s 0.8s cubic-bezier(0, 0, 0.2, 1);
     --planilhas-transition-mouseout: 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
-
 p, h1, h2, h3, h4, h5, h6, span {
     margin:0;
     cursor: default;
     font-weight: 100;
 }
-
 a {
     color:inherit;
 }
-
 button:focus {
     outline:none;
 }
-
 main {
     background-color: #DEE;
     position: fixed;
@@ -32,11 +27,9 @@ main {
     bottom: 0;
     left: 0;
 }
-
 .outlinks {
-    color: white
+    color: white 
 }
-
 .menu_lateral {
     height: 100%;
     width: 23.6%;
@@ -46,7 +39,6 @@ main {
     justify-content: center;
     align-items: center;
 }
-
 .menu_lateral div {
     width: 65%;
     height: 80%;
@@ -55,29 +47,23 @@ main {
     align-items: center;
     flex-direction: column;
 }
-
 .menu_lateral div img {
     width: 90%;
 }
-
 .menu_lateral div button {
     box-shadow: 0 0.7vh #007278;
     transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-
 .menu_lateral div button:hover {
     transform: translateY(0.7vh);
     box-shadow: 0 0 0 #777 !important;
 }
-
 .menu_lateral div button:active {
     box-shadow: 0 0 0 #777 !important;
 }
-
 .menu_lateral div button:last-child:hover {
     transform: skew(30deg) translateY(0.7vh);
 }
-
 .menu_lateral div button:not(:last-child) {
     width: 100%;
     background: linear-gradient(-12deg, #008080 50%, #0C8C8C 53%, #36B6B6 100%);
@@ -88,13 +74,10 @@ main {
     font-size: 1.2vw;
     cursor: pointer;
 }
-
-
 #dourado {
     background: linear-gradient(-12deg, #F5CD00 50%, #F1BC37 50%);
     box-shadow: 0 0.7vh goldenrod;
 }
-
 .menu_lateral div button:last-child {
     width: 61.8%;
     background: linear-gradient(-12deg, #008080 50%, #0C8C8C 50%);
@@ -106,13 +89,10 @@ main {
     cursor: pointer;
     transform: skew(30deg);
 }
-
-
 .menu_lateral div button:last-child p {
     transform: skew(-30deg);
     cursor: pointer;
 }
-
 .planilhas, .sobre_o_site, .contato, .parceiros {
     position: absolute;
     top: 0;
@@ -123,23 +103,21 @@ main {
     transition: 0.15s;
     padding: 10vh 5% 0 5%;
 }
-
 .ativa {
     visibility: visible;
     opacity: 1;
     transition:1s ease;
 }
-
 .planilhas {
     flex-flow: row wrap;
     display: flex;
     justify-content: space-between;
 }
-
 .planilhas article {
     width:100%;
     height: 30vh;
-    /* background: #FFF; */
+   /* background: #FFF;
+    */
     margin-bottom: 1.5%;
     position: relative;
     transition: box-shadow 0.15s cubic-bezier(0.22, 0.61, 0.36, 1), height 0.3s ease-in, background 0.15s;
@@ -149,35 +127,25 @@ main {
     overflow: hidden;
     box-shadow:0 10px 60px 10px rgba(255,255,255,0.8);
 }
-
 /* === CLASSES INSERIDAS POR JAVASCRIPT === */
-
 .altura_planilha {
     height: 75%;
 }
-
 .planilhas article:hover {
     height:60vh;
     transition: height var(--planilhas-transition-mouseon), background 0.15s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-
-
 .planilhas article:hover .article_info h4 {
     height: 62%;
-    transition: height var(--planilhas-transition-mouseon),
- margin var(--planilhas-transition-mouseon),
- padding var(--planilhas-transition-mouseon),
- background var(--planilhas-transition-mouseon);
+    transition: height var(--planilhas-transition-mouseon), margin var(--planilhas-transition-mouseon), padding var(--planilhas-transition-mouseon), background var(--planilhas-transition-mouseon);
     margin: 2% 0 3vh 0;
     padding: 3vh 0;
     overflow: scroll;
     -webkit-mask-image: linear-gradient(white, white);
 }
-
 .planilhas article:hover .article_info {
     color:white;
 }
-
 .article_img_container {
     width: 18%;
     height: 100%;
@@ -185,70 +153,53 @@ main {
     align-items: center;
     justify-content: center;
 }
-
 .article_img_container img {
     min-height: 20vh;
     width: 18vh;
     transition: 0.15s ease;
 }
-
-                #controle_financeiro:hover {
-                    background:#19B6B6;
-                }
-
-                #antecipacao_recebiveis:hover {
-                    background: #CD3100;
-                }
-
-                #real_presumido:hover {
-                    background: seagreen;
-                }
-
-                #indices_economicos:hover {
-                    background: tomato;
-                }
-
-                #operacoes_emprestimo:hover {
-                    background:#FFB900;
-                }
-
-                #imposto_imobiliario:hover {
-                    background:#5819D6;
-                }
-
-                #pagamentos_recebimentos:hover {
-                    background:#3C2300;
-                }
-
-                #operacoes_consorcio:hover {
-                    background:mediumslateblue;
-                }
-
-                #calculadora_financeira:hover {
-                    background: seagreen;
-                }
-
-                #nota_debito:hover {
-                    background: goldenrod;
-                }
-
-                #arquivo_geral:hover {
-                    background: sienna;
-                }
-
-                #emissor_recibo:hover {
-                    background: #d60057;
-                }
-
-                #emissor_rpa:hover {
-                    background: #FF7B40;
-                }
-
-                #banco_horas:hover {
-                    background: mediumseagreen;
-                }
-
-
+#controle_financeiro:hover {
+    background:#19B6B6;
+}
+#antecipacao_recebiveis:hover {
+    background: #CD3100;
+}
+#real_presumido:hover {
+    background: seagreen;
+}
+#indices_economicos:hover {
+    background: tomato;
+}
+#operacoes_emprestimo:hover {
+    background:#FFB900;
+}
+#imposto_imobiliario:hover {
+    background:#5819D6;
+}
+#pagamentos_recebimentos:hover {
+    background:#3C2300;
+}
+#operacoes_consorcio:hover {
+    background:mediumslateblue;
+}
+#calculadora_financeira:hover {
+    background: seagreen;
+}
+#nota_debito:hover {
+    background: goldenrod;
+}
+#arquivo_geral:hover {
+    background: sienna;
+}
+#emissor_recibo:hover {
+    background: #d60057;
+}
+#emissor_rpa:hover {
+    background: #FF7B40;
+}
+#banco_horas:hover {
+    background: mediumseagreen;
+}
 .article_info {
     width: 72%;
     display: flex;
@@ -257,89 +208,71 @@ main {
     justify-content: space-evenly;
     color: #2A3D59;
     transition: 0.15s cubic-bezier(0.39, 0.58, 0.57, 1);
-    /* padding-right: 20%; */
+   /* padding-right: 20%;
+    */
     box-sizing: border-box;
     height: 90%;
 }
-
 .article_info h4 {
     height: 38%;
     overflow: hidden;
     -webkit-mask-image: linear-gradient(white 60%, transparent 100%);
     transition:height var(--planilhas-transition-mouseout), margin var(--planilhas-transition-mouseout), padding var(--planilhas-transition-mouseout);
 }
-
-
-
-
 .planilhas article h3 {
     font-size: 4.5vh;
     font-weight: 500;
 }
-
-
 .planilhas article > div p {
     font-size: 2.5vh;
 }
-
-
 .article_info > div {
     display: flex;
     flex-direction: row;
     width: 60%;
     justify-content: space-between;
 }
-
 .planilhas article h4 {
     font-size: 3vh;
     font-weight: 100;
 }
-
 .article_info > div p, .article_info h4, .article_info h3 {
     cursor: default;
 }
-
 .right_buttons {
     height: 100%;
     display: flex;
     align-items: center;
     width: 15%;
 }
-
 .planilhas article .right_buttons > a {
     width: 100%;
 }
-
-
 .planilhas article .right_buttons > a > img {
-    width:40%;
+    width: 10vh;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    margin: 0 auto;
 }
-
 .right_buttons > a {
     height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     cursor: alias;
-    transition:var(--planilhas-transition-mouseout);
+    transition: var(--planilhas-transition-mouseout);
     background: #BDD;
+    position: relative;
 }
-
-
-    .planilhas article:hover .right_buttons > a:nth-child(1) {
-        background: rgba(255,255,255,0.1);
-    }
-
+.planilhas article:hover .right_buttons > a:nth-child(1) {
+    background: rgba(255,255,255,0.1);
+}
 .right_buttons > a:hover {
     background: rgba(255,255,255,0.3) !important;
 }
-
 .right_buttons > a:hover img {
     transform: scale(1.2);
 }
-
 .progress_bar {
     position: absolute;
     top: 0;
@@ -349,47 +282,33 @@ main {
     transition: 0s cubic-bezier(0, 0, 0.2, 1);
     opacity: 1;
 }
-
 .planilhas article:hover .progress_bar {
     opacity:0;
     width: 100%;
     transition: width var(--articles-transition-delay) 0.5s cubic-bezier(0, 0, 0.2, 1), opacity 0.4s var(--articles-transition-delay);
 }
-
-
 .planilhas article div p {
     margin-right: 3%;
     font-weight: 500;
 }
-
 .planilhas article div h4 {
     font-weight: 400;
 }
-
-
-
-
-
-
 /* === SOBRE O SITE === */
-
 .sobre_o_site, .contato {
     color: #265B61;
     flex-direction: column;
     display: flex;
 }
-
 .sobre_o_site h2, .contato h2 {
     font-size: 5vh;
     font-weight: 400;
     margin-bottom: 3vh;
 }
-
 .sobre_o_site iframe {
     width: 38vw;
     height: 21vw;
 }
-
 .iframe_container {
     display: flex;
     flex-direction: row;
@@ -399,39 +318,30 @@ main {
     padding: 6vh;
     border-radius: 5px;
 }
-
 .iframe_container iframe {
     width: 50%;
     height: 43vh;
 }
-
 .iframe_container p {
     width: 45%;
     font-size: 4vh;
     text-shadow: 3px 3px 10px #BBB;
 }
-
 .sobre_o_site > p, .sobre_o_site > h2, .contato > p, .contato > h2 {
     margin-bottom: 3vh;
     cursor: default;
 }
-
 .sobre_o_site > p, .contato p {
     font-size: 3.5vh;
     border-radius: 10px;
 }
-
-
-
 .sobre_o_site article, .contato article {
     display: flex;
     justify-content: space-between;
 }
-
 .sobre_o_site article div {
     width: 100%;
 }
-
 .sobre_o_site article div:nth-child(1) {
     box-sizing: border-box;
     padding: 1vh 3vh;
@@ -443,16 +353,13 @@ main {
     height: 150vh;
     text-align: center;
 }
-
 .sobre_o_site article div h4 {
     font-size: 4vh;
     font-weight: 100;
 }
-
 .sobre_o_site article div p {
     font-size: 3vh;
 }
-
 .sobre_o_site article div:nth-child(1) p {
     background: rgba(255,255,255,0.2);
     padding: 2.5vh 3vh;
@@ -460,40 +367,11 @@ main {
     border-radius: 5px;
     transition: 0.2s ease-in-out;
 }
-
 .sobre_o_site article div:nth-child(1) p:hover {
     transform:scale(1.05);
     background: rgba(255,255,255,0.6);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* === CONTATO === */
-
 .contato form {
     display: flex;
     flex-direction: column;
@@ -505,7 +383,6 @@ main {
     text-align: center;
     color: white;
 }
-
 .contato form input, .contato form textarea {
     margin-bottom: 2vh;
     border: none;
@@ -515,24 +392,19 @@ main {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-
 .contato form p {
     margin-bottom: 6vh;
     text-align: center;
 }
-
 .contato form input:last-child {
     cursor: pointer;
 }
-
 .contato form textarea {
     height: 25vh;
 }
-
 input:focus, textarea:focus {
     outline:none;
 }
-
 .contato article {
     display: flex;
     flex-direction: row;
@@ -540,7 +412,6 @@ input:focus, textarea:focus {
     align-items: center;
     height: 50vh;
 }
-
 .contato article div {
     width: 48%;
     background: white;
@@ -548,30 +419,22 @@ input:focus, textarea:focus {
     box-sizing: border-box;
     border: 1vh solid #DDD;
 }
-
 .contato article div p {
     margin-bottom: 2vh;
     font-size: 2.5vh;
 }
-
 .planilhas article:last-child {
     margin-bottom: 50vh;
 }
-
 .mobile_top {
     display: none;
 }
-
-
-
 /* === PARCEIROS === */
-
 .parceiros {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
 }
-
 .parceiros article {
     display: flex;
     flex-flow: row wrap;
@@ -579,7 +442,6 @@ input:focus, textarea:focus {
     align-items: baseline;
     height: 72vh;
 }
-
 .parceiros article a {
     width: 45%;
     background: white;
@@ -588,57 +450,35 @@ input:focus, textarea:focus {
     border-radius: 7px;
     transition: 0.3s ease-in;
 }
-
 .parceiros article a img {
     width: 100%;
 }
-
-
 .parceiros a:hover {
     transform:scale(1.05);
     box-shadow:0 0 20px #ccc;
     transition: 0.3s ease-out;
 }
-
 .contato {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-
 .contato p {
     text-align: justify;
     margin-bottom: 3vh;
 }
-
 .contato > div {
     width: 45%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 ::-webkit-scrollbar {
     width: 8px;
 }
-
 -moz-scrollbar-track {
     width:8px;
 }
-
 ::-webkit-scrollbar-thumb {
     background: #FFFF80;
 }
-
 ::placeholder {
     color:white;
     font-size:2.5vh;
@@ -677,45 +517,7 @@ input:focus, textarea:focus {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 140vh) {
-
     body {
         background: linear-gradient(-45deg, #2A3D59, #458E75);
         width: 100vw;
@@ -723,25 +525,21 @@ input:focus, textarea:focus {
         overflow-y: auto;
         overflow-x: hidden;
         background-attachment:fixed;
-    }
-
+   }
     main {
         background: none;
         background-color: unset;
         top: 0;
         z-index: 1;
         bottom: unset;
-    }
-
+   }
     .menu_lateral {
         height: 10vh;
         width: 100vw;
         background: white;
         border-radius: 0;
         position: fixed;
-    }
-
-
+   }
     .planilhas, .sobre_o_site, .contato, .parceiros {
         position: absolute;
         right: 0;
@@ -750,33 +548,26 @@ input:focus, textarea:focus {
         padding-right: 0;
         padding-left: 0;
         height: auto;
-    }
-
+   }
     .parceiros article a {
         width: 80%;
         margin-bottom: 5%;
-    }
-
-  .sections_container {
-    background:red;
-    width:100%;
-  }
-
+   }
+    .sections_container {
+        background:red;
+        width:100%;
+   }
     .planilhas article {
         height: 28vh;
         margin-bottom: 2vh;
         background: white;
-    }
-
-
+   }
     .planilha_menor {
         width: 100%;
-    }
-    
+   }
     .article_img_container {
         width: 25%;
-    }
-
+   }
     .menu_lateral > div {
         position: fixed;
         flex-direction: column;
@@ -787,98 +578,80 @@ input:focus, textarea:focus {
         width: 100vw;
         height: unset;
         bottom: 27.3%;
-
         opacity: 0;
         visibility: hidden;
         transform: translateY(-100%);
-
         transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         box-shadow: 0 20px 50px darkslategrey;
-    }
-
+   }
     .descer_menu {
         opacity: 1 !important;
         visibility: visible !important;
         transform: translateY(0) !important;
-    }
-
+   }
     .menu_lateral div img {
         width: 20vh;
-    }
-
+   }
     .mobile_top {
         width: 100vw;
         height: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-    }
-
+   }
     .menu_lateral div button:not(:last-child) {
         width: 61.8%;
         font-size: 3vh;
         padding: 2vh 1vh;
-    }
-
+   }
     .menu_lateral div button:last-child {
         font-size: 2.5vh;
         margin-bottom: 5vh;
         width: 38.2%;
-    }
-
+   }
     .mobile_top h2 {
         color: #2A3D59;
         font-size: 4.5vw;
         font-weight: 400;
         letter-spacing: 0.6vw;
-    }
-
+   }
     .mobile_top > div, .mobile_top > img {
         z-index: 2;
         cursor: pointer;
         position: absolute;
-    }
-
+   }
     .mobile_top > div {
         right: 5%;
         width: 6vh;
         height: 5vh;
-    }
-
+   }
     .mobile_top > img {
         left: 5%;
         width: 8vh;
         height: 80%;
         z-index: -1;
-    }
-
+   }
     #palitoCima {
         top:0;
-    }
-
+   }
     #palitoMeio {
         top:50%;
         transform: translateY(-50%);
-    }
-
+   }
     #palitoBaixo {
         bottom:0;
-    }
-    
+   }
     .palitoCimaClicked {
         top: 50% !important;
         transform: translateY(-50%) rotate(-45deg);
-    }
-
+   }
     .palitoMeioClicked {
         opacity: 0;
-    }
-
+   }
     .palitoBaixoClicked {
         bottom: 50% !important;
         transform: translateY(50%) rotate(45deg);
-    }
-
+   }
     .mobile_top > div > div {
         width: 100%;
         height: 18%;
@@ -887,93 +660,70 @@ input:focus, textarea:focus {
         transition:0.3s ease-out;
         position:absolute;
         transform-origin: center;
-    }
-
-
-
+   }
     .planilhas article:hover .article_info h4, .article_info h4 {
         height: 100%;
-    }
-
-
+   }
     .planilhas article h3 {
         font-size: 3vh;
         font-weight: 400;
-    }
-
+   }
     .planilhas article h4 {
         font-size: 2.5vh;
-    }
-
+   }
     .article_info {
         height: 75%;
         margin: 5vh 0;
         width: 62%;
-    }
-
+   }
     .sobre_o_site iframe {
         width: 100%;
         height: 40vh;
-    }
-
+   }
     .sobre_o_site h2, .contato h2 {
         text-align: center;
-    }
-
+   }
     .iframe_container {
         flex-direction: column;
-    }
-
+   }
     .iframe_container p {
         width: 100%;
         text-align: center;
         margin-top: 6vh;
         color: #2A3D59;
-    }
-
-
+   }
     .sobre_o_site article, .contato article {
         flex-direction: column;
         margin: 10vh 0;
-    }
-
+   }
     .planilhas article .right_buttons > a > img {
         width: 70%;
-    }
-
+   }
     .contato {
         justify-content: center;
-    }
-
+   }
     .contato article div {
         width: 75%;
         background: none;
         border: none;
-    }
-
+   }
     .contato h3 {
         width: 80vw;
-    }
-
+   }
     .contato form {
         width: 100%;
-    }
-
+   }
     .contato > div {
         width: 100%;
         margin: 10vh 0;
-    }
-
+   }
     .sobre_o_site, .contato {
         color: white;
-    }
-
+   }
     .contato article div p {
         color: white;
-    }
-
+   }
     .article_img_container img {
         width: 14vh;
-    }
-
+   }
 }

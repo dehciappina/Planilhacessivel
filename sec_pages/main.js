@@ -19,11 +19,25 @@ function goToInfo() {
     normal_v_window.scrollIntoView({block: "start", behavior: "smooth"})
 }
 
+const completeVers = document.querySelector('.complete_vers')
+const completeVersSection = document.querySelector('.complete_vers > section')
+
+function gatilhoVersaoCompleta() {
+    completeVers.classList.add("triggered_complete_vers");
+    completeVersSection.classList.add('triggered_complete_vers_section')
+
+    setTimeout(function() {
+        completeVers.classList.remove("triggered_complete_vers");
+        completeVersSection.classList.remove('triggered_complete_vers_section')
+    }, 3000)
+}
+
 normal_v_button.addEventListener('click', goToInfo)
 
 freeDownload.addEventListener('click', function() {
     freeDownloadText.innerHTML = "Baixando..."
     setTimeout(function() {
         freeDownloadText.innerHTML = "Download Gratuito"
+        gatilhoVersaoCompleta()
     },1200)
 })
