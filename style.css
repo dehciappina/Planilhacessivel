@@ -138,8 +138,6 @@ main {
 .planilhas article:hover .article_info h4 {
     height: 62%;
     transition: height var(--planilhas-transition-mouseon), margin var(--planilhas-transition-mouseon), padding var(--planilhas-transition-mouseon), background var(--planilhas-transition-mouseon);
-    margin: 2% 0 3vh 0;
-    padding: 3vh 0;
     overflow: scroll;
     -webkit-mask-image: linear-gradient(white, white);
 }
@@ -215,7 +213,7 @@ main {
 }
 .article_info h4 {
     height: 38%;
-    overflow: hidden;
+    overflow: scroll;
     -webkit-mask-image: linear-gradient(white 60%, transparent 100%);
     transition:height var(--planilhas-transition-mouseout), margin var(--planilhas-transition-mouseout), padding var(--planilhas-transition-mouseout);
 }
@@ -561,6 +559,7 @@ input:focus, textarea:focus {
         height: 28vh;
         margin-bottom: 2vh;
         background: white;
+        box-shadow: none;
    }
     .planilha_menor {
         width: 100%;
@@ -670,9 +669,10 @@ input:focus, textarea:focus {
    }
     .planilhas article h4 {
         font-size: 2.5vh;
+        padding: 1vh 0;
    }
     .article_info {
-        height: 75%;
+        height: 90%;
         margin: 5vh 0;
         width: 62%;
    }
@@ -726,4 +726,15 @@ input:focus, textarea:focus {
     .article_img_container img {
         width: 14vh;
    }
+
+   .planilhas article > div p {
+    font-size: 2vh;
+    }
+
+    .article_info > div {
+        width: 90%;
+    }
+
+
+
 }
