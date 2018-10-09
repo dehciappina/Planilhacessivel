@@ -248,11 +248,28 @@ body > section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.front_img {
+.front_img, .tutorial_call {
     animation: float_icon 1.5s ease-in-out infinite alternate;
     width: 46%;
+}
+
+.tutorial_call {
+    margin-top: 5vh;
+}
+
+.tutorial_call svg, .tutorial_call svg path {
+    transition:0.15s ease-in-out;
+}
+
+.tutorial_call:hover svg .st1 {
+    opacity:1;
+}
+
+.tutorial_call:hover svg .play {
+    fill: #ff0000;
 }
 
 @keyframes float_icon {
@@ -260,7 +277,7 @@ body > section {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-7%);
+        transform: translateY(-2.5vh);
     }
 }
 
@@ -618,8 +635,10 @@ body > section {
 
     .sec1 > aside {
         width: 100%;
-        height: 36vh;
-        align-items: flex-end;
+        height: 32vh;
+        padding-top: 4vh;
+        align-items: center;
+        flex-direction: row;
     }
 
     .sec1 {
@@ -720,6 +739,13 @@ body > section {
 
 
 
+    @keyframes float_icon {
+        0% {
+        }
+        100% {
+        }
+    }
+    
 
 
 

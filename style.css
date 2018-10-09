@@ -39,7 +39,7 @@ main {
     justify-content: center;
     align-items: center;
 }
-.menu_lateral div {
+.menu_lateral > div {
     width: 65%;
     height: 80%;
     display: flex;
@@ -47,24 +47,33 @@ main {
     align-items: center;
     flex-direction: column;
 }
-.menu_lateral div img {
+
+.menu_lateral > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(13vh + 9vw);
+    width: 100%;
+}
+.menu_lateral > div img {
     width: 90%;
 }
-.menu_lateral div button {
+.menu_lateral > div > div button {
     box-shadow: 0 0.7vh #007278;
     transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-.menu_lateral div button:hover {
+.menu_lateral > div > div button:hover {
     transform: translateY(0.7vh);
     box-shadow: 0 0 0 #777 !important;
 }
-.menu_lateral div button:active {
+.menu_lateral > div > div button:active {
     box-shadow: 0 0 0 #777 !important;
 }
-.menu_lateral div button:last-child:hover {
+.menu_lateral > div > div button:last-child:hover {
     transform: skew(30deg) translateY(0.7vh);
 }
-.menu_lateral div button:not(:last-child) {
+.menu_lateral > div > div button:not(:last-child) {
     width: 100%;
     background: linear-gradient(-12deg, #008080 50%, #0C8C8C 53%, #36B6B6 100%);
     color: white;
