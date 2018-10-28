@@ -5,13 +5,17 @@ body {
 :root {
     --articles-transition-delay:0.8s;
     --articles-transition:0.5s;
-    --planilhas-transition-mouseon: 0.4s 0.8s cubic-bezier(0, 0, 0.2, 1);
+    --planilhas-transition-mouseon: 0.5s 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     --planilhas-transition-mouseout: 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 p, h1, h2, h3, h4, h5, h6, span {
     margin:0;
     cursor: default;
     font-weight: 100;
+}
+strong {
+    font-weight: inherit;
+    text-decoration: underline;
 }
 a {
     color:inherit;
@@ -26,9 +30,6 @@ main {
     right: 0;
     bottom: 0;
     left: 0;
-}
-.outlinks {
-    color: white 
 }
 .menu_lateral {
     height: 100%;
@@ -147,7 +148,7 @@ main {
 .planilhas article:hover .article_info h4 {
     height: 62%;
     transition: height var(--planilhas-transition-mouseon), margin var(--planilhas-transition-mouseon), padding var(--planilhas-transition-mouseon), background var(--planilhas-transition-mouseon);
-    overflow: scroll;
+    overflow-y: scroll;
     -webkit-mask-image: linear-gradient(white, white);
 }
 .planilhas article:hover .article_info {
@@ -202,17 +203,13 @@ main {
     background: #d60057;
 }
 #emissor_rpa:hover {
-    background: #FF7B40;
+    background: #B83500;
 }
 #banco_horas:hover {
     background: mediumseagreen;
 }
 .article_info {
     width: 72%;
-    display: flex;
-    align-items: initial;
-    flex-direction: column;
-    justify-content: space-evenly;
     color: #2A3D59;
     transition: 0.15s cubic-bezier(0.39, 0.58, 0.57, 1);
    /* padding-right: 20%;
@@ -220,15 +217,18 @@ main {
     box-sizing: border-box;
     height: 90%;
 }
+.planilhas article h3 {
+    font-size: 4.5vh;
+    font-weight: 500;
+    margin: 3vh 0 1vh 0;
+}
+
 .article_info h4 {
     height: 38%;
     overflow: scroll;
     -webkit-mask-image: linear-gradient(white 60%, transparent 100%);
     transition:height var(--planilhas-transition-mouseout), margin var(--planilhas-transition-mouseout), padding var(--planilhas-transition-mouseout);
-}
-.planilhas article h3 {
-    font-size: 4.5vh;
-    font-weight: 500;
+    top: 10vh;
 }
 .planilhas article > div p {
     font-size: 2.5vh;
@@ -236,12 +236,14 @@ main {
 .article_info > div {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 62%;
     justify-content: space-between;
+    bottom: 3vh;
+    position: absolute;
 }
 .planilhas article h4 {
     font-size: 3vh;
-    font-weight: 100;
+    overflow-x: hidden;
 }
 .article_info > div p, .article_info h4, .article_info h3 {
     cursor: default;
@@ -284,7 +286,7 @@ main {
 .progress_bar {
     position: absolute;
     top: 0;
-    height: 2%;
+    height: 0.6vh;
     background: rgba(255,255,0,1);
     width: 0%;
     transition: 0s cubic-bezier(0, 0, 0.2, 1);
@@ -491,7 +493,9 @@ input:focus, textarea:focus {
     color:white;
     font-size:2.5vh;
 }
-
+.minor_font {
+    margin: 0 !important;
+}
 
 
 
@@ -550,8 +554,8 @@ input:focus, textarea:focus {
    }
     .planilhas, .sobre_o_site, .contato, .parceiros {
         position: absolute;
-        right: 0;
-        left: 0;
+        right: 3%;
+        left: 3%;
         top: 7vh;
         padding-right: 0;
         padding-left: 0;
@@ -671,16 +675,15 @@ input:focus, textarea:focus {
         position:absolute;
         transform-origin: center;
    }
-    .planilhas article:hover .article_info h4, .article_info h4 {
-        height: 100%;
-   }
     .planilhas article h3 {
         font-size: 3vh;
         font-weight: 400;
+        margin: calc(0.5vh + 1vw) 0;
    }
     .planilhas article h4 {
         font-size: 2.5vh;
         padding: 1vh 0;
+        height: 35%;
    }
     .article_info {
         height: 90%;
@@ -735,15 +738,11 @@ input:focus, textarea:focus {
         color: white;
    }
     .article_img_container img {
-        width: 14vh;
+        width: calc(5vh + 10vw);
    }
 
    .planilhas article > div p {
-    font-size: 2vh;
-    }
-
-    .article_info > div {
-        width: 90%;
+    font-size: 1.8vh;
     }
 
     .menu_lateral > div > div {

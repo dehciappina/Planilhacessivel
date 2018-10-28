@@ -154,7 +154,7 @@ body > header, body > footer {
     align-items: center;
     font-weight: 400;
     color: var(--default-font-color-1);
-    background: white;
+    background: rgba(255,255,255,0.4);
     transition: 0.2s ease;
     justify-content: space-evenly;
     font-size: 4vh;
@@ -285,7 +285,7 @@ body > section {
 
 .back_img {
     transform: rotate(-15deg);
-    opacity: 0.3;
+    opacity: 0.38;
     right: -20%;
     height: 130%;
     bottom: -35%;
@@ -448,27 +448,6 @@ body > section {
     border-radius:100px;
 }
 
-
-/* 
-.price_tag::before {
-    content: "A transação será efetuada pelo PagSeguro. A planilha completa será enviada por planilhacessivel@outlook.com após a confirmação do pagamento.";
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s ease;
-    background: rgba(255,255,255,0.9);
-    color: #2A3D59;
-    padding: 4vh;
-    transform: translateX(-90%);
-    left:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: right;
-    font-size: 3vh;
-} */
-
-
 .sec2 > h3 {
     font-size: 7vh;
     color: #8AA;
@@ -558,7 +537,11 @@ body > section {
     font-size:2.5vh;
 }
 
-
+#price_tag {
+    letter-spacing: 0.3vw;
+    font-weight: 400;
+    background: rgba(255, 215, 0, 0.4);
+}
 
 
 
